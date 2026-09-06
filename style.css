@@ -1,0 +1,205 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at top, #312e81 0%, transparent 40%),
+        linear-gradient(135deg, #050816, #111827, #1e1b4b);
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 40px 15px;
+}
+
+
+/* CONTAINER */
+
+.container {
+    width: 100%;
+    max-width: 550px;
+
+    text-align: center;
+}
+
+
+/* PROFILE */
+
+.profile {
+    margin-bottom: 30px;
+}
+
+
+/* LOGO */
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+
+    display: block;
+
+    margin: 0 auto 18px auto;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid rgba(255, 255, 255, 0.7);
+
+    box-shadow:
+        0 0 20px rgba(129, 140, 248, 0.7),
+        0 0 50px rgba(99, 102, 241, 0.3);
+}
+
+
+/* NAMA */
+
+.profile h1 {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+    font-weight: 800;
+}
+
+
+/* BIO */
+
+.profile p {
+    color: #c7d2fe;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    line-height: 1.5;
+}
+
+
+/* LINKS */
+
+.links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+/* JUDUL SECTION */
+
+.section-title {
+    margin-top: 15px;
+
+    margin-bottom: -2px;
+
+    padding: 10px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    color: #c7d2fe;
+
+    letter-spacing: 1px;
+}
+
+
+/* TOMBOL */
+
+.link-button {
+    display: block;
+
+    width: 100%;
+
+    padding: 17px 20px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    background: rgba(255, 255, 255, 0.09);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    transition: all 0.25s ease;
+}
+
+
+/* HOVER */
+
+.link-button:hover {
+    transform: translateY(-4px) scale(1.02);
+
+    background: rgba(255, 255, 255, 0.16);
+
+    border-color: rgba(255, 255, 255, 0.4);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        0 0 20px rgba(99, 102, 241, 0.2);
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 30px;
+
+    padding-bottom: 10px;
+
+    font-size: 13px;
+
+    color: #818cf8;
+}
+
+
+/* HP */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 30px 15px;
+    }
+
+    .profile-picture {
+        width: 105px;
+        height: 105px;
+    }
+
+    .profile h1 {
+        font-size: 25px;
+    }
+
+    .profile p {
+        font-size: 13px;
+    }
+
+    .link-button {
+        padding: 16px 15px;
+
+        font-size: 14px;
+    }
+
+}
